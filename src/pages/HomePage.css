@@ -41,7 +41,7 @@
 
 .specialties-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
 
@@ -65,19 +65,30 @@
   box-shadow: 0 4px 12px rgba(46, 125, 94, 0.1);
 }
 
-.specialty-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.specialty-image-container {
+  width: 100%;
+  height: 80px;
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.specialty-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
 }
 
 .specialty-card span {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  padding: 8px;
 }
 
 /* Top Rated Section */

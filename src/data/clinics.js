@@ -19,6 +19,21 @@ export const SPECIALTY_COLORS = {
   "노인질환": "#C8955B",
 };
 
+export const SPECIALTY_IMAGES = {
+  "다이어트": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+  "척추/관절": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+  "피부": "https://images.unsplash.com/photo-1570172619644-dfd03cb5f913?w=400&h=300&fit=crop",
+  "여성질환": "https://images.unsplash.com/photo-1559839734033-6461efaf3cef?w=400&h=300&fit=crop",
+  "소화기": "https://images.unsplash.com/photo-1584308666744-24d5f400f628?w=400&h=300&fit=crop",
+  "면역/체력": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
+  "두통/신경": "https://images.unsplash.com/photo-1559839734033-6461efaf3cef?w=400&h=300&fit=crop",
+  "소아": "https://images.unsplash.com/photo-1503454537688-e6c6ff1ee367?w=400&h=300&fit=crop",
+  "성장": "https://images.unsplash.com/photo-1503454537688-e6c6ff1ee367?w=400&h=300&fit=crop",
+  "교통사고": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+  "한방내과": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+  "노인질환": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+};
+
 export const clinics = [
   {
     id: "1",
@@ -29,6 +44,7 @@ export const clinics = [
     phone: "02-1234-5678",
     website: "https://example.com",
     description: "20년 이상의 경력을 가진 전문 한의사들이 운영하는 한의원입니다. 다이어트, 척추 교정, 피부 미용 분야에서 탁월한 치료 성과를 보이고 있습니다.",
+    image: "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
     specialties: ["다이어트", "척추/관절", "피부"],
     doctors: [
       { id: "d1", name: "김한의", title: "원장", specialties: ["다이어트", "척추/관절"], education: ["경희대학교 한의과대학 졸업"], career: ["전) 강남 대형 한의원 원장", "현) 서울 자연한의원 원장"] },
@@ -58,6 +74,7 @@ export const clinics = [
     city: "부산",
     phone: "051-9876-5432",
     description: "부산 동래 지역에서 30년 이상 운영 중인 전통 한의원입니다. 여성질환과 소아 치료를 전문으로 합니다.",
+    image: "https://images.unsplash.com/photo-1559839734033-6461efaf3cef?w=400&h=300&fit=crop",
     specialties: ["여성질환", "소아", "면역/체력"],
     doctors: [
       { id: "d3", name: "박여성", title: "원장", specialties: ["여성질환", "면역/체력"], education: ["부산대학교 한의과대학 졸업"], career: ["현) 부산 동래 한의원 원장"] }
@@ -84,6 +101,7 @@ export const clinics = [
     city: "서울",
     phone: "02-5555-7777",
     description: "최첨단 한방 의료 장비와 전문 의료진을 갖춘 프리미엄 한의원입니다. 교통사고 후유증 치료 전문입니다.",
+    image: "https://images.unsplash.com/photo-1631217b9201-d5ffd007da1d?w=400&h=300&fit=crop",
     specialties: ["교통사고", "척추/관절", "두통/신경"],
     doctors: [
       { id: "d4", name: "최척추", title: "원장", specialties: ["척추/관절", "교통사고"], education: ["경희대학교 한의과대학 졸업"], career: ["전) 경희의료원 한방병원 전임의"] }
@@ -98,85 +116,86 @@ export const clinics = [
     ],
     rating: 4.6,
     reviewCount: 203,
-    openHours: { weekday: "09:00 - 20:00", saturday: "09:00 - 15:00", sunday: "휴진" },
-    tags: ["자동차보험", "야간진료"],
-    priceRange: "고가"
+    openHours: { weekday: "09:00 - 19:00", saturday: "09:00 - 15:00", sunday: "휴진" },
+    tags: ["최신 장비", "프리미엄"],
+    priceRange: "비싼"
   },
   {
     id: "4",
-    name: "대구 중구 한의원",
-    address: "대구광역시 중구 동성로 321",
+    name: "대구 피부 한의원",
+    address: "대구광역시 중구 동성로 234",
     district: "중구",
     city: "대구",
-    phone: "053-1111-2222",
-    description: "대구 도심에 위치한 접근성 좋은 한의원입니다. 소화기 질환과 면역력 강화에 특화되어 있습니다.",
-    specialties: ["소화기", "면역/체력", "한방내과"],
+    phone: "053-1234-5678",
+    description: "피부 질환 치료 전문 한의원입니다. 여드름, 아토피, 건선 등 다양한 피부 질환을 한의학적으로 치료합니다.",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03cb5f913?w=400&h=300&fit=crop",
+    specialties: ["피부", "소화기"],
     doctors: [
-      { id: "d6", name: "이소화", title: "원장", specialties: ["소화기", "한방내과"], education: ["대구한의대학교 한의과대학 졸업"], career: ["현) 대구 중구 한의원 원장"] }
+      { id: "d5", name: "이피부", title: "원장", specialties: ["피부"], education: ["대구한의대학교 한의과대학 졸업"], career: ["현) 대구 피부 한의원 원장"] }
     ],
     prices: [
-      { category: "침치료", name: "일반 침", price: "10,000원" },
-      { category: "한약", name: "소화기 한약 (1개월)", price: "180,000원~" },
-      { category: "한약", name: "면역 보약 (1개월)", price: "200,000원~" }
+      { category: "침치료", name: "일반 침", price: "15,000원" },
+      { category: "피부", name: "피부 한약 (1개월)", price: "300,000원~" }
     ],
     reviews: [
-      { id: "r8", author: "서**", rating: 5, content: "과민성 대장증후군으로 고생했는데 3개월 치료 후 거의 완치됐어요.", date: "2024-02-28", specialty: "소화기" }
-    ],
-    rating: 4.4,
-    reviewCount: 67,
-    openHours: { weekday: "09:00 - 18:00", saturday: "09:00 - 13:00", sunday: "휴진" },
-    tags: ["합리적 가격"],
-    priceRange: "저렴"
-  },
-  {
-    id: "5",
-    name: "인천 연수 한의원",
-    address: "인천광역시 연수구 송도대로 555",
-    district: "연수구",
-    city: "인천",
-    phone: "032-7777-8888",
-    description: "송도 신도시에 위치한 현대적인 한의원입니다. 성장 클리닉과 소아 한방 치료를 전문으로 합니다.",
-    specialties: ["성장", "소아", "면역/체력"],
-    doctors: [
-      { id: "d7", name: "조성장", title: "원장", specialties: ["성장", "소아"], education: ["원광대학교 한의과대학 졸업"], career: ["전) 소아 전문 한의원 근무"] }
-    ],
-    prices: [
-      { category: "침치료", name: "소아 침 (무통)", price: "12,000원" },
-      { category: "성장", name: "성장 한약 (1개월)", price: "220,000원~" },
-      { category: "성장", name: "성장 침 + 한약 패키지 (3개월)", price: "550,000원~" }
-    ],
-    reviews: [
-      { id: "r9", author: "김**", rating: 5, content: "아이 성장이 또래보다 느려서 걱정이었는데, 6개월 치료 후 키가 많이 컸어요.", date: "2024-03-10", specialty: "성장" }
+      { id: "r8", author: "송**", rating: 5, content: "여드름으로 고생했는데 2개월 치료 후 깨끗해졌어요!", date: "2024-03-10", specialty: "피부" }
     ],
     rating: 4.8,
     reviewCount: 156,
     openHours: { weekday: "09:00 - 19:00", saturday: "09:00 - 14:00", sunday: "휴진" },
-    tags: ["소아 전문", "어린이 친화"],
+    tags: ["피부 전문"],
+    priceRange: "보통"
+  },
+  {
+    id: "5",
+    name: "인천 소아 한의원",
+    address: "인천광역시 남동구 남동대로 567",
+    district: "남동구",
+    city: "인천",
+    phone: "032-7890-1234",
+    description: "소아 질환과 성장 발달을 전문으로 하는 한의원입니다. 아이들의 건강한 성장을 돕습니다.",
+    image: "https://images.unsplash.com/photo-1503454537688-e6c6ff1ee367?w=400&h=300&fit=crop",
+    specialties: ["소아", "성장", "면역/체력"],
+    doctors: [
+      { id: "d6", name: "박소아", title: "원장", specialties: ["소아", "성장"], education: ["경희대학교 한의과대학 졸업"], career: ["현) 인천 소아 한의원 원장"] }
+    ],
+    prices: [
+      { category: "침치료", name: "소아 침", price: "10,000원" },
+      { category: "소아", name: "성장 한약 (1개월)", price: "250,000원~" }
+    ],
+    reviews: [
+      { id: "r10", author: "정**", rating: 5, content: "아이 키 크는데 정말 도움이 되었어요!", date: "2024-02-28", specialty: "성장" }
+    ],
+    rating: 4.9,
+    reviewCount: 142,
+    openHours: { weekday: "09:00 - 18:00", saturday: "09:00 - 13:00", sunday: "휴진" },
+    tags: ["소아 전문", "성장 전문"],
     priceRange: "보통"
   },
   {
     id: "6",
-    name: "광주 서구 한의원",
-    address: "광주광역시 서구 상무대로 100",
-    district: "서구",
+    name: "광주 종합 한의원",
+    address: "광주광역시 동구 충장로 890",
+    district: "동구",
     city: "광주",
-    phone: "062-3333-4444",
-    description: "광주 상무지구에 위치한 한의원으로 노인 질환과 만성 통증 치료에 특화되어 있습니다.",
-    specialties: ["노인질환", "척추/관절", "한방내과"],
+    phone: "062-5555-9999",
+    description: "다양한 질환을 종합적으로 치료하는 한의원입니다. 한방내과 전문입니다.",
+    image: "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+    specialties: ["한방내과", "소화기", "면역/체력"],
     doctors: [
-      { id: "d8", name: "문노인", title: "원장", specialties: ["노인질환", "척추/관절"], education: ["전남대학교 한의과대학 졸업"], career: ["현) 광주 서구 한의원 원장"] }
+      { id: "d7", name: "최종합", title: "원장", specialties: ["한방내과"], education: ["조선대학교 한의과대학 졸업"], career: ["현) 광주 종합 한의원 원장"] }
     ],
     prices: [
-      { category: "침치료", name: "일반 침", price: "12,000원" },
-      { category: "한약", name: "노인 보약 (1개월)", price: "200,000원~" }
+      { category: "침치료", name: "일반 침", price: "13,000원" },
+      { category: "한방내과", name: "체질 개선 한약 (1개월)", price: "280,000원~" }
     ],
     reviews: [
-      { id: "r10", author: "오**", rating: 4, content: "무릎 관절염으로 고생하시는 어머니를 모시고 왔는데, 침 치료 후 통증이 많이 줄었다고 하세요.", date: "2024-02-15", specialty: "노인질환" }
+      { id: "r12", author: "이**", rating: 4, content: "소화가 잘 안 되었는데 한약 복용 후 많이 좋아졌습니다.", date: "2024-03-05", specialty: "소화기" }
     ],
-    rating: 4.3,
-    reviewCount: 45,
-    openHours: { weekday: "09:00 - 17:30", saturday: "09:00 - 12:30", sunday: "휴진" },
-    tags: ["어르신 친화"],
+    rating: 4.4,
+    reviewCount: 98,
+    openHours: { weekday: "09:00 - 18:30", saturday: "09:00 - 13:30", sunday: "휴진" },
+    tags: ["종합 진료"],
     priceRange: "저렴"
   }
 ];

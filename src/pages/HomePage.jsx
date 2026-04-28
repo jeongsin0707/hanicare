@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Search, Stethoscope } from 'lucide-react'
-import { clinics, SPECIALTIES, SPECIALTY_COLORS } from '../data/clinics'
+import { clinics, SPECIALTIES, SPECIALTY_COLORS, SPECIALTY_IMAGES } from '../data/clinics'
 import ClinicCard from '../components/ClinicCard'
 import './HomePage.css'
 
@@ -27,8 +27,8 @@ export default function HomePage() {
         <div className="specialties-grid">
           {SPECIALTIES.map(specialty => (
             <Link key={specialty} to={`/search?specialty=${specialty}`} className="specialty-card">
-              <div className="specialty-icon" style={{ backgroundColor: SPECIALTY_COLORS[specialty] + '22' }}>
-                <Stethoscope size={24} color={SPECIALTY_COLORS[specialty]} />
+              <div className="specialty-image-container" style={{ backgroundImage: `url(${SPECIALTY_IMAGES[specialty]})` }}>
+                <div className="specialty-overlay" style={{ backgroundColor: SPECIALTY_COLORS[specialty] }}></div>
               </div>
               <span>{specialty}</span>
             </Link>
