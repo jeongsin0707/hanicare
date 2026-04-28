@@ -19,19 +19,19 @@ export const SPECIALTY_COLORS = {
   "노인질환": "#C8955B",
 };
 
-export const SPECIALTY_IMAGES = {
-  "다이어트": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
-  "척추/관절": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
-  "피부": "https://images.unsplash.com/photo-1570172619644-dfd03cb5f913?w=400&h=300&fit=crop",
-  "여성질환": "https://images.unsplash.com/photo-1559839734033-6461efaf3cef?w=400&h=300&fit=crop",
-  "소화기": "https://images.unsplash.com/photo-1584308666744-24d5f400f628?w=400&h=300&fit=crop",
-  "면역/체력": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop",
-  "두통/신경": "https://images.unsplash.com/photo-1559839734033-6461efaf3cef?w=400&h=300&fit=crop",
-  "소아": "https://images.unsplash.com/photo-1503454537688-e6c6ff1ee367?w=400&h=300&fit=crop",
-  "성장": "https://images.unsplash.com/photo-1503454537688-e6c6ff1ee367?w=400&h=300&fit=crop",
-  "교통사고": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
-  "한방내과": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
-  "노인질환": "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop",
+export const SPECIALTY_EMOJIS = {
+  "다이어트": "⚖️",
+  "척추/관절": "🦴",
+  "피부": "✨",
+  "여성질환": "🌸",
+  "소화기": "🍽️",
+  "면역/체력": "💪",
+  "두통/신경": "🧠",
+  "소아": "👶",
+  "성장": "📈",
+  "교통사고": "🚗",
+  "한방내과": "🌿",
+  "노인질환": "👴",
 };
 
 export const clinics = [

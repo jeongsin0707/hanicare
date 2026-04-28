@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Search, Stethoscope } from 'lucide-react'
-import { clinics, SPECIALTIES, SPECIALTY_COLORS, SPECIALTY_IMAGES } from '../data/clinics'
+import { Search } from 'lucide-react'
+import { clinics, SPECIALTIES, SPECIALTY_COLORS, SPECIALTY_EMOJIS } from '../data/clinics'
 import ClinicCard from '../components/ClinicCard'
 import './HomePage.css'
 
@@ -12,7 +12,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>한의하니와 함께 나에게 맞는 한의원을 찾아보세요</h1>
+          <h1>나와 맞는 한의원을 찾아보세요</h1>
           <p>전국 한의원의 전문 특화분야, 의료인 정보, 가격을 한눈에 비교하고 예약하세요</p>
           <Link to="/search" className="btn btn-primary btn-lg">
             <Search size={18} />
@@ -27,8 +27,8 @@ export default function HomePage() {
         <div className="specialties-grid">
           {SPECIALTIES.map(specialty => (
             <Link key={specialty} to={`/search?specialty=${specialty}`} className="specialty-card">
-              <div className="specialty-image-container" style={{ backgroundImage: `url(${SPECIALTY_IMAGES[specialty]})` }}>
-                <div className="specialty-overlay" style={{ backgroundColor: SPECIALTY_COLORS[specialty] }}></div>
+              <div className="specialty-emoji" style={{ backgroundColor: SPECIALTY_COLORS[specialty] + '22' }}>
+                {SPECIALTY_EMOJIS[specialty]}
               </div>
               <span>{specialty}</span>
             </Link>

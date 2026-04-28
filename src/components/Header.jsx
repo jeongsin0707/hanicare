@@ -7,8 +7,7 @@ export default function Header({ favoritesCount }) {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-icon">한</span>
-          <span className="logo-text">한의하니 <span style={{fontSize: '12px', color: 'rgba(255,255,255,0.8)'}}>한나라한</span></span>
+          <span className="logo-text" style={{fontSize: '20px', fontWeight: 'bold'}}>한나라한</span>
         </Link>
         
         <nav className="nav">
