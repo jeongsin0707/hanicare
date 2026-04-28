@@ -7,8 +7,8 @@ export default function Header({ favoritesCount }) {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-icon">韓</span>
-          <span className="logo-text">HaniCare</span>
+          <span className="logo-icon">한</span>
+          <span className="logo-text">한의하니</span>
         </Link>
         
         <nav className="nav">

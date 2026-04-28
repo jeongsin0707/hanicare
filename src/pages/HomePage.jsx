@@ -12,8 +12,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>내 몸에 맞는 한의원을 찾아드립니다</h1>
-          <p>전국 한의원의 전문 특화분야, 의료인 정보, 가격을 한눈에 비교하세요</p>
+          <h1>한의하니와 함께 나에게 맞는 한의원을 찾아보세요</h1>
+          <p>전국 한의원의 전문 특화분야, 의료인 정보, 가격을 한눈에 비교하고 예약하세요</p>
           <Link to="/search" className="btn btn-primary btn-lg">
             <Search size={18} />
             한의원 검색하기
