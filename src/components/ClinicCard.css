@@ -1,0 +1,127 @@
+.clinic-card {
+  margin-bottom: 16px;
+}
+
+.card-header {
+  margin-bottom: 12px;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.clinic-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.2s;
+  flex: 1;
+}
+
+.clinic-name:hover {
+  color: var(--primary);
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.clinic-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.specialty-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.specialty-tag.more {
+  background-color: var(--border);
+  color: var(--muted);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.rating-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.review-count {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.price-range {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.price-range[data-range="저렴"] {
+  background-color: #22C55E22;
+  color: #22C55E;
+}
+
+.price-range[data-range="보통"] {
+  background-color: #C8955B22;
+  color: #C8955B;
+}
+
+.price-range[data-range="고가"] {
+  background-color: #EF444422;
+  color: #EF4444;
+}
+
+@media (max-width: 768px) {
+  .clinic-card {
+    margin-bottom: 12px;
+  }
+
+  .clinic-name {
+    font-size: 15px;
+  }
+}

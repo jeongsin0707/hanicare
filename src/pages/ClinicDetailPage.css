@@ -1,0 +1,449 @@
+.detail-page {
+  padding: 24px 0;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.back-btn {
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background-color: var(--surface);
+}
+
+.detail-header h1 {
+  flex: 1;
+  font-size: 20px;
+  color: var(--foreground);
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.hero-icon {
+  font-size: 48px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.hero-info {
+  flex: 1;
+}
+
+.hero-info h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.meta-label {
+  opacity: 0.8;
+}
+
+/* Section */
+.section {
+  margin-bottom: 32px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--foreground);
+}
+
+.section h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--foreground);
+}
+
+/* Specialties */
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.specialty-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+/* Contact */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.contact-item svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+.contact-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Hours */
+.hours-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hour-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.hour-row svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hour-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.hour-value {
+  font-size: 14px;
+  color: var(--foreground);
+}
+
+/* Doctors */
+.doctors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doctor-card {
+  background-color: var(--surface);
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.doctor-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.doctor-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.doctor-title {
+  background-color: var(--primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.doctor-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.doctor-specialty {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doctor-info > div {
+  font-size: 12px;
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.doctor-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.doctor-info li {
+  font-size: 12px;
+  color: var(--foreground);
+  margin-bottom: 3px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.doctor-info li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+/* Prices */
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-category {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.price-category:last-child {
+  border-bottom: none;
+}
+
+.price-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.price-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.price-name span:first-child {
+  font-size: 13px;
+  color: var(--foreground);
+}
+
+.price-desc {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.price-value {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.price-notice {
+  font-size: 11px;
+  color: var(--muted);
+  background-color: var(--surface);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid var(--warning);
+  margin-top: 12px;
+}
+
+/* Reviews */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-card {
+  background-color: var(--surface);
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.review-author {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.review-specialty {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.review-content {
+  font-size: 13px;
+  color: var(--foreground);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.review-date {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.no-reviews {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* CTA */
+.cta-section {
+  padding: 24px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-lg {
+  flex: 1;
+  padding: 14px 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-header {
+    flex-wrap: wrap;
+  }
+
+  .detail-header h1 {
+    flex-basis: 100%;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
+  .cta-section {
+    flex-direction: column;
+  }
+}
